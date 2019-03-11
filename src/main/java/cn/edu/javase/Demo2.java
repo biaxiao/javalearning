@@ -22,7 +22,7 @@ public class Demo2 {
         System.out.println(s4 == "aa"); //t
 
     }
-/*
+/*https://bbs.csdn.net/topics/220015609
 为了加深理解，我们可以来做几个小实验。
 
 javac Test         编译文件
