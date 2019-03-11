@@ -1,4 +1,4 @@
-package cn.edu.javase;
+package cn.edu.javase.string;
 
 import org.junit.Test;
 
@@ -12,7 +12,8 @@ public class Demo2 {
         //1连接方式
         String s1 = "a";
         String s2 = "a";
-        String s3 = "a" + s2;
+        String s3 = "a" + s2;//会产生 StringBuilder
+      //   s3.intern();// 加上 这个s3==s4 就为true
         String s4 = "a" + "a";
         String s5 = s1 + s2;
         //表达式只有常量时，编译期完成计算
