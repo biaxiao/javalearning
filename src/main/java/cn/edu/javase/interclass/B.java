@@ -23,6 +23,7 @@ public class B{
         // 因为内部类在外部类加载时并不会被加载和初始化。
         //所以不会进行静态代码的调用
         int i = 2;//外部类无法读取内部类的成员，而内部类可以直接访问外部类成员
+        private static final int m=0;
         public void test() {
             System.out.println(j);
             j = 2;
