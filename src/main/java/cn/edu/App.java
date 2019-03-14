@@ -1,5 +1,6 @@
 package cn.edu;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 /**
@@ -8,6 +9,11 @@ import java.util.Arrays;
  */
 public class App 
 {
+
+    public void e() throws IOException,Exception,RuntimeException{
+
+    }
+
     public static void main( String[] args )
     {
        /* final int[] value={1,2,3} ;
@@ -16,12 +22,14 @@ public class App
         another[0]=3;
 
         System.out.println(Arrays.toString(value) );*/
-       A a=new A();
-        a.p();
+       //A a=new A();
+       // a.p();
+        A.p();
     }
 }
 class A{
-    public  void p(){
+    public static void p(){
+        int i=0;
         System.out.println("-------");
     }
 
