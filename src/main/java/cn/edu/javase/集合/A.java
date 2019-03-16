@@ -24,7 +24,6 @@ public class A implements Collection {
         return 0;
     }
 
-    @Override
     public boolean isEmpty() {
         return false;
     }
