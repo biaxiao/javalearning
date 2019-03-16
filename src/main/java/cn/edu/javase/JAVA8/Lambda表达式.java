@@ -108,7 +108,11 @@ public class Lambda表达式 {
 	    
 	    
 	    
-	    
+	    interface AA{
+	    	 public  default void a() {
+	    		
+	    	}
+	    }
 	    
 	    
 	    
