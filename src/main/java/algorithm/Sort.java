@@ -12,18 +12,19 @@ public class Sort {
 
 	
 	public static void main(String[] args) {
-		int[] arr= {3,2,44,47,5,38,19,48,4,50,26,15,46,7};//{3,2};//
+//		int[] arr= {3,2,44,47,5,38,19,48,4,50,26,15,46,7};//{3,2};//
+		int[] arr=new int[]{5,32,17,34,17,7,9,33,7,27};
 //		bubbleSort(arr);
 //		selectionSort(arr);
 //		insertionSort(arr);
 //		shellSort(arr);
-//		arr=mergeSort(arr);
+		arr=mergeSort(arr);
 //		arr=quickSort(arr, 0, arr.length-1);
 //		heapSort(arr);
 //		countingSort(arr, 50);
 //		countingSort(arr);
 //		bucketSort(arr, 5);
-		radixSort(arr);
+//		radixSort(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 	
