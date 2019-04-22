@@ -10,7 +10,9 @@ import java.util.List;
  */
 public class Sort {
 
-	
+	public void Sort() {
+		System.out.println("---");
+	}
 	public static void main(String[] args) {
 //		int[] arr= {3,2,44,47,5,38,19,48,4,50,26,15,46,7};//{3,2};//
 		int[] arr=new int[]{5,32,17,34,17,7,9,33,7,27};
@@ -26,6 +28,7 @@ public class Sort {
 //		bucketSort(arr, 5);
 //		radixSort(arr);
 		System.out.println(Arrays.toString(arr));
+		Sort s=new Sort();
 	}
 	
 	
