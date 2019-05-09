@@ -14,7 +14,7 @@ public class Demo3_2 {
         int length=arr.length;
         int left=1;
         int right=length-1;
-        while(left<=right){
+        while(left<=right){//直接写true也行
             int middle=( (right-left) >> 1)+left;
             int count=count(arr,left,middle);
             if (right==left){
