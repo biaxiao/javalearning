@@ -19,7 +19,7 @@ public class Demo7 {
 	
 	static BinaryTreeNode ConstructCore(int[] preOrder,int preLeft,int preRight,int[] inOrder,int inLeft,int inRight) {
 		if(preLeft>preRight||inLeft>inRight) {
-			return null;  //只能这样写，不然的话，回出现数组下标越界，因为==的话，并不能拒绝 变大以后的不等
+			return null;  //只能这样写，不然的话，回出现数组下标越界，因为==的话，只能拒绝==，之后并不能拒绝 继续变大后的不等
 		}
 		
 		BinaryTreeNode rootNode=new BinaryTreeNode(preOrder[preLeft]);
