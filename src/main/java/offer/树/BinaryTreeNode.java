@@ -8,6 +8,7 @@ public class BinaryTreeNode {
 	int value;
 	BinaryTreeNode pleft;
 	BinaryTreeNode pright;
+	BinaryTreeNode parent;
 	public BinaryTreeNode(int value) {
 		this.value=value;
 	}
