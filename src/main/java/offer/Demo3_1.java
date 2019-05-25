@@ -5,23 +5,23 @@ package offer;
  */
 public class Demo3_1 {
     public static void main(String[] args) {
-        int[] arr={3,0,2,5,2,5,3};
-        getRepeat(arr);
+        int[] arr={5,6,3,4,1,2,3,7,8,10};
+        System.out.println(getRepeat(arr));;
     }
 
-    public static void getRepeat(int[] arr){
-      for(int i=0;i<arr.length;i++){
-          while(arr[i]!=i){
-              if(arr[i]==arr[arr[i]]){
-                  System.out.println(arr[i]);
-                  return;
+    public static int getRepeat(int[] nums){
+      for(int i=0;i<nums.length;i++){
+          while(nums[i]!=i){
+              if(nums[i]==nums[nums[i]]){
+                  return nums[i];
               }
 
-              int temp=arr[i];
-              arr[i]=arr[temp];
-              arr[temp]=temp;
+              int temp=nums[i];
+              nums[i]=nums[temp];
+              nums[temp]=temp;
           }
       }
+      return -1;
     }
 
 }
