@@ -5,8 +5,8 @@ package offer;
  */
 public class Demo12 {
 	public static void main(String[] args) {
-		char[] [] arr=new char[][]{{'a','b','c','d'},{'c','f','c','s'},{'j','d','e','h'}};
-		String str="abfb";
+		char[] [] arr=new char[][]{{'a','b','t','g'},{'c','f','c','s'},{'j','d','e','h'}};
+		String str="b";
 		int rows=3;
 		int cols=4;
 		System.out.println(hasPath(arr, rows, cols, str));
@@ -16,7 +16,7 @@ public class Demo12 {
 			return false;
 		}
 		boolean[][] visited=new boolean[rows][cols];
-		int pathLength=0;
+		int pathLength=0;//路径字符串中下标
 		for (int row = 0; row < rows; ++row) {
 			for (int col = 0; col < cols; ++col) {
 				if (hasPathCore(arr, rows, cols, row, col, str, pathLength, visited)) {
