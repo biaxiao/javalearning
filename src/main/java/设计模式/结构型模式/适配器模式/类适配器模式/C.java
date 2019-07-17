@@ -4,7 +4,6 @@ public class C  extends B implements A{
 
 	@Override
 	public void m3() {
-		// TODO Auto-generated method stub
 		
 	}
 
